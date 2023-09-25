@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya Banka</title>
+</head>
+<body>
+    <form action="">
+
+        <h1>Payment form</h1>
+        <h2>Contact Information</h2>
+
+        <p>* required fields</p>
+
+        <p>Name* : <input type="text" name="name" required></p>
+
+        <!-- attribute name is what goes to the server and attribute value is what is shown to the user. Using attribute required makes it required -->
+
+        <fieldset>
+            <legend align="left">Gender</legend>
+            <p>
+                <input type="radio" name="gender" > Male <br>
+                <input type="radio" name="gender" > Female <br>
+                <input type="radio" name="gender" > Others <br>
+            </p>
+        </fieldset>
+
+        <!-- fieldset makes the border for the gender area, and legend add the gender text to the box. here legend kinda acts like an attribute to the tag fieldset.  -->
+        <!-- here required can be added to all the options or just one, it behaves the same way and has no difference. -->
+
+        <p>
+          Addrress : <textarea name="Address" cols="50" rows="10"></textarea>
+        </p>
+
+        <!-- textarea allows users to enter a large text such as address. normal input could have also been used, but it would have made it clumsy. -->
+
+        <p>Email : <input type="email" name="email" ></p>
+
+        <p>Pincode : <input type="number" name="pincode"></p>
+
+        <!-- using seperate p tags adds a bit of spacing between them and also changes the line. -->
+
+        <h2>Payment Information</h2>
+
+        <p>
+            Card type : 
+            <select name="card">
+                <!-- <option value=""> ~Select a card type~ </option> -->
+                <option value="visa"> Visa </option>
+                <option value="mastercard"> Master Card</option>
+                <option value="rupay"> Rupay</option>
+            </select>
+        </p>
+
+        <!-- select creates a drop down menu for the users and each option is the option in the menu -->
+
+        <p> Card Number <input type="number" name="card_number"> </p>
+
+        <p> Expiry <input type="date" name="expiry"> </p>
+
+        <p> CVV <input type="password" name="cvv"> </p>
+
+        <input type="submit" value="Pay Now">
+
+        <!-- attribue is name is what the server gets while attribue value is what the user sees. -->
+
+    </form>
+</body>
+</html>
+
+<!-- there are multiple types of inputs and they all can be accessed by typing input then : .
+type text is ddefault and creates a small text field.
+number takes in number input.
+Date created a calender to choose date from.
+Passwords creates a text field which hides the entered text.  -->
